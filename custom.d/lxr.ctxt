@@ -1,0 +1,26 @@
+# -*- mode: perl -*-
+# Context file associated with lxr.conf
+# Created 2014-08-15 17:08:40 UTC
+# Strictly internal, do not play with content
+$context_created = 3;
+
+$cardinality = 'm';
+$dbpolicy = 't';
+$dbengine = 'm';
+$dbuser = 'lxr';
+$dbpass = 'lxrpw';
+$dbprefix = 'lxr_';
+$servertype = 'D';
+$scheme = 'http:';
+$hostname = 'lxr.xs.citrite.net';
+$port = '80';
+@schemealiases = qw( http:
+                   );
+@hostaliases = qw( 10.80.16.85
+                 );
+@portaliases = qw( 80
+                 );
+$treematch = 'A';
+$commonvirtroot = 0;
+$virtrootbase = '';
+$virtrootpolicy = '';
