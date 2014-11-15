@@ -91,11 +91,10 @@ sub new {
 
 # 	read_config() if we meet a new DB to make sure the type dictionary
 #	is correctly annotated.
-#PG - Force read_config
-#	if	($seenDB != $LXR::Index::database_id) {
+	if	($seenDB != $LXR::Index::database_id) {
 		read_config();
 		$seenDB = $LXR::Index::database_id;
-#	}
+	}
 	%$self = (%$self, %$generic_config);
 
 	# Set langid
